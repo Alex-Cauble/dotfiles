@@ -1,0 +1,89 @@
+set nocompatible
+filetype off
+
+"Runtime Path Adds
+set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/colors/*.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
+Plugin 'vim-airline/vim-airline'
+Plugin 'preservim/nerdtree'
+"Language Extensions
+Plugin 'PProvost/vim-ps1'
+Plugin 'curist/vim-angular-template'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'stephpy/vim-yaml'
+
+call vundle#end()
+filetype plugin indent on
+filetype on
+
+"Color Settings
+colorscheme molokai
+
+"Spacing and Tabs
+set tabstop=2
+set softtabstop=2
+set expandtab
+
+
+"UI Config
+set relativenumber
+set showcmd
+set cursorline
+set lazyredraw
+set showmatch
+set number
+filetype indent on
+
+
+"Searching
+set incsearch
+set hlsearch
+set ignorecase
+set path+=**
+set wildmenu
+
+"Folding
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+nnoremap <space> za
+set foldmethod=indent
+
+"Movement
+nnoremap j gj
+nnoremap k gk
+
+"Non-Movemnt Bindings
+no <up> ddkP
+no <down> ddp
+no <left> <Nop>
+no <right> <Nop>
+
+ino <up> <Nop>
+ino <down> <Nop>
+ino <left> <Nop>
+ino <right> <Nop>
+
+vno <up> <Nop>
+vno <down> <Nop>
+vno <left> <Nop>
+vno <right> <Nop>
+
+nmap G Gzz
+nmap gg ggzz
+nmap n nzzLzz
+nmap N NzzLzz
+nmap } }zz
+nmap { {zz
+
+"Leader Shortcuts
+"Ctrl_P
+"Backups
+
