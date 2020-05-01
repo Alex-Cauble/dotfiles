@@ -5,6 +5,9 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/colors/*.vim
 
+"Swap Files Location
+set directory=~/.vim/swapfiles//
+
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
