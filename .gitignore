@@ -1,2 +1,6 @@
 bundle
 swapfiles
+undodir/
+colors/
+swapfiles/
+bundle/
