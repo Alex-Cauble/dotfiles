@@ -1,7 +1,5 @@
-bundle
-swapfiles
-undodir/
 colors/
 swapfiles/
-bundle/
+undodir/
+bundle/*
 !bundle/Vundle.vim
