@@ -17,6 +17,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'preservim/nerdtree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'kien/ctrlp.vim'
+Plugin 'prettier/vim-prettier'
+Plugin 'raimondi/delimitmate'
 "Language Extensions
 Plugin 'PProvost/vim-ps1'
 Plugin 'curist/vim-angular-template'
@@ -25,6 +28,10 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'stephpy/vim-yaml'
 
 call vundle#end()
+
+"Setting up ignore path for ctrl P plugin
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 filetype plugin indent on
 filetype on
 syntax on
@@ -107,6 +114,10 @@ nnoremap <leader>f :find<Space>
 
 nnoremap <leader>+ :verticle resize +5<CR>
 nnoremap <leader>- :verticle resize -5<CR>
+
+"Find Files
+nnoremap <leader>f :find *
+
 "Ctrl_P
 "Backups
 
