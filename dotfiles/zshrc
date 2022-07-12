@@ -122,3 +122,5 @@ alias dcub="docker-compose up --build"
 
 #General Aliases
 alias cls="clear"
+
+alias v="nvim"
